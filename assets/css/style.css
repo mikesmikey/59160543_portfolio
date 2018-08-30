@@ -49,14 +49,12 @@ footer {
 }
 
 .contentarea {
-  padding-left: 20%;
-  padding-right: 20%;
+  padding: 5% 20% 5% 20%;
   overflow: auto;
 }
 
 .singlecontentbox {
   background-color: #ededed;
-  width: auto;
   margin: 20px;
   float : left;
 }
@@ -69,13 +67,6 @@ footer {
 
 /*singlecontennt clear fix */
 .singlecontentbox::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/*doublecontennt clear fix */
-.doublecontentbox::after {
   content: "";
   clear: both;
   display: table;
@@ -108,4 +99,41 @@ header {
   margin-left: auto;
   margin-right: auto;
   
+}
+
+.skillbox {
+  width: auto;
+  height: 30%;
+  padding: 5px;
+  margin: 5px;
+  text-align: left;
+  font-size: 28px;
+  overflow: auto;
+  border-bottom: 2px solid #f79800;
+}
+
+.skillbox p {
+  overflow: hidden;
+}
+
+.skillbox img {
+  max-width:100px;
+  margin-right: 20px;
+  width: auto;
+  height: auto;
+  background-color:#f79800;
+  float:left;
+}
+
+.skillbox img::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#avatarimg {
+  max-width:230px;
+  width: auto;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
